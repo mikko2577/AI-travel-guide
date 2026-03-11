@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloudflare AI Travel Guide</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar" aria-label="Project header">
+        <div class="brand-mark">Boston AI Guide</div>
+        <div class="topbar-note">Cloudflare Workers AI + Durable Objects</div>
+      </header>
+
+      <section class="hero" aria-label="Project introduction">
+        <p class="eyebrow">Cloudflare AI Travel Guide</p>
+        <h1>A guided way to explore Boston, one step at a time.</h1>
+        <p class="hero-copy">
+          Ask about food, aquariums, or a 1-day or 3-day plan. The guide narrows
+          things down through short follow-up questions, answers in clean bullet
+          points, and only sends you to the right Boston page when it actually helps.
+        </p>
+      </section>
+
+      <section class="chat-shell" aria-label="AI travel guide chat">
+        <div class="chat-panel">
+          <div class="chat-header">
+            <div>
+              <p class="chat-kicker">Travel concierge</p>
+              <h2>Boston AI Guide</h2>
+            </div>
+            <p class="chat-guide-text">
+              Start with a simple goal like <strong>food</strong>, <strong>aquarium</strong>,
+              <strong>1-day plan</strong>, or <strong>3-day plan</strong>.
+            </p>
+          </div>
+
+          <div id="chatMessages" class="chat-messages" aria-live="polite">
+            <div class="message ai">
+              <div class="message-meta">AI Guide</div>
+              <div class="message-bubble">
+                <p>Hi! I’m your AI travel guide.</p>
+                <p>
+                  Tell me your goal first and I’ll guide you through one short decision
+                  at a time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-input-area">
+            <label class="sr-only" for="chatInput">Message the AI travel guide</label>
+            <input
+              id="chatInput"
+              type="text"
+              placeholder="Try: food, aquarium, 1-day plan, or 3-day plan..."
+              autocomplete="off"
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

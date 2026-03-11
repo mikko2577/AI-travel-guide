@@ -1,0 +1,19 @@
+name = "aitravelguide"
+main = "src/index.js"
+compatibility_date = "2026-03-07"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[ai]
+binding = "AI"
+
+[durable_objects]
+bindings = [
+  { name = "CHATROOM", class_name = "ChatRoom" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ChatRoom"]

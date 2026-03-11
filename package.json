@@ -1,0 +1,13 @@
+{
+  "name": "aitravelguide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI travel guide built with Cloudflare Workers, Durable Objects, and connected Boston travel site links.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.71.0"
+  }
+}
