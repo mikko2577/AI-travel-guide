@@ -1,6 +1,7 @@
 # AI Travel Guide
 
 This project is an AI guide hub built with Cloudflare Workers and Durable Objects.
+https://aitravelguide.jiachanli910.workers.dev/
 
 ## What changed in this version
 
